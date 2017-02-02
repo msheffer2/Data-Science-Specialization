@@ -18,3 +18,13 @@
 *.zip
 *.zipx
 *.bak
+
+#Removing data files due to large size
+*.csv
+business.Rdata
+ddat.Rdata
+pdat.Rdata
+review.Rdata
+*.Rhistory
+data/
+output/

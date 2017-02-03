@@ -18,6 +18,7 @@
 *.zip
 *.zipx
 *.bak
+*.7z
 
 #Removing data files due to large size
 *.csv

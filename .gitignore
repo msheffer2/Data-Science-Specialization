@@ -21,8 +21,11 @@
 *.tmp
 *.bak
 
-#Excluding all data files due to file size limitations
-data/
+#Excluding some data files due to file size limitations
+#7-zip versions of these files split into chunks of < 100 Mb are included in respository
+data/review.Rdata
+data/stardat.Rdata
+data/corpus.Rdata
 
 #Excluding some output files due to file size limitations
 #7-zip versions of these files split into chunks of < 100 Mb are included in respository

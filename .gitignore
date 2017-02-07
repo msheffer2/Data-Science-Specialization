@@ -27,6 +27,7 @@ data/review.Rdata
 data/stardat.Rdata
 data/corpus.Rdata
 data/yelp_academic_dataset_review.7z
+data/yelp_academic_dataset_business.7z
 
 #Excluding some output files due to file size limitations
 #7-zip versions of these files split into chunks of < 100 Mb are included in respository

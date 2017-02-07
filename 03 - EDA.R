@@ -131,7 +131,8 @@ rfactors <- data.frame(abs(fit$rotation[,1:2])) %>%
   mutate(check2 = ifelse(check > mean(check), 1, 0)) %>%
   filter(check2 == 1) %>%
   arrange(-check) %>%
-  filter(row_number() <= 30) %>%
+  #filter(row_number() <= 30) %>%; #NOTE:  Reduced to 20 for the report
+  filter(row_number() <= 20) %>%
   select(name)
 use <- rfactors$name
 
@@ -184,4 +185,4 @@ pca_plot_dat <- list(pca_plot_dat, word_dat, sf)
 save(pca_plot_dat, file="./output/pca_plot_dat.Rdata")
 ggsave("./output/pca_plot.pdf")
 
-rm(pca_plot_dat, word_dat, groups, pca, sf, moddat)
+rm(pca_plot_dat, word_dat, pca, sf, moddat)

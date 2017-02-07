@@ -6,6 +6,7 @@
 .Rproj.user
 .Rhistory
 .Ruserdata
+.Rproj
 
 #Compressed files
 *.zip

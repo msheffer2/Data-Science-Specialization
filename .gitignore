@@ -7,6 +7,10 @@
 .Rhistory
 .Ruserdata
 
+#Compressed files
+*.zip
+*.zipx
+
 # Office temporary
 ~$*.doc*
 ~$*.xls*
@@ -15,17 +19,13 @@
 
 #Other temporary
 *.tmp
-*.zip
-*.zipx
 *.bak
-*.7z
 
-#Removing data files due to large size
-*.csv
-business.Rdata
-ddat.Rdata
-pdat.Rdata
-review.Rdata
-*.Rhistory
+#Excluding all data files due to file size limitations
 data/
-output/
+
+#Excluding some output files due to file size limitations
+#7-zip versions of these files split into chunks of < 100 Mb are included in respository
+output/mod53.fit.xz
+output/mod54.fit.xz
+output/mod13.fit.xz

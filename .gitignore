@@ -7,6 +7,7 @@
 *.Rhistory
 *.Ruserdata
 *.Rproj
+*.html
 
 #Compressed files
 *.zip

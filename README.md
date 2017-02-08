@@ -5,8 +5,11 @@ The files in this repository were used as my Capstone submission for the Johns H
 
 The courses in the specialization didn't offer a lot of new material in regards to modeling, but at the time I decided to take the specialization I was trying to ween myself off of SAS and onto R full time.  The courses in the specilation were great for forcing my hand in that way!
 
-There were specific requirements for the Capstone project that differ from how I might typically work but the final 
-[Captone Report](https://github.com/msheffer2/Data-Science-Specialization/blob/master/report/Capstone_Report.pdf)  offers a good overview of the material covered.  Although I didn't need to perform so many models (I ended up performing 12 predictive algorithms for the report), I personally tend to try a lot of different algorithms in my own work so it only seemed natural to try many things here too. The different algorithms employed include:
+There were specific requirements for the Capstone project that differ from how I might typically work but the final Capstone report offers a good overview of the material covered:
+
+[**Captone Report**](https://github.com/msheffer2/Data-Science-Specialization/blob/master/report/Capstone_Report.pdf)
+
+Although I didn't need to perform so many models (I ended up performing 12 predictive algorithms for the report), I personally tend to try a lot of different algorithms in my own work so it only seemed natural to try many things here too. The different algorithms employed include:
 
 * standard classification algorithm via rpart
 * C5.0 implementation of a standard classification algorithm

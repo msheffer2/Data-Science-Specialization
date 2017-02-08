@@ -3,10 +3,10 @@
 *.DS_Store
 
 #R files
-.Rproj.user
-.Rhistory
-.Ruserdata
-.Rproj
+*.Rproj.user
+*.Rhistory
+*.Ruserdata
+*.Rproj
 
 #Compressed files
 *.zip

@@ -1,11 +1,19 @@
 ## Data Science Specialization Final Report
+## Predicting 5-star and 1-star Ratings in Yelp Restaurant Reviews
 
-The files in this repository were used as my Capstone submission for the Johns Hopkins Data Science Specialization.  
+The files in this repository were used as my Capstone submission for the Johns Hopkins Data Science Specialization. 
 
 The courses in the specialization didn't offer a lot of new material in regards to modeling, but at the time I decided to take the specialization I was trying to ween myself off of SAS and onto R full time.  The courses in the specilation were great for forcing my hand in that way!
 
 There were specific requirements for the Capstone project that differ from how I might typically work but the final 
-[Captone Report](https://github.com/msheffer2/Data-Science-Specialization/blob/master/report/Capstone_Report.pdf)  offers a good overview of the material covered.  Although I didn't need to perform so many models (I ended up performing 12 predictive algorithms for the report), I personally tend to try a lot of different algorithms in my own work so it only seemed natural to try many things here too.  
+[Captone Report](https://github.com/msheffer2/Data-Science-Specialization/blob/master/report/Capstone_Report.pdf)  offers a good overview of the material covered.  Although I didn't need to perform so many models (I ended up performing 12 predictive algorithms for the report), I personally tend to try a lot of different algorithms in my own work so it only seemed natural to try many things here too. The different algorithms employed include:
+
+* standard classification algorithm via rpart
+* C5.0 implementation of a standard classification algorithm
+* Random Forest model
+* Bagged Tree model
+* Gradient Boosting Machine
+* Naive Bayes model
 
 Technically, the PDF Captsone Report was all that was required but I also submitted a github repository for those interested in seeing my syntax, which I've recreated here.  This repository includes most of the datafiles required to replicate this work (excluding the original Yelp datasets, due to file size and general availability elsewhere) and all of the saved outputs generated via the syntax files.  In addition to the markdown document used to create the final PDF report, 7 syntax files are provided describing the workflow.
 

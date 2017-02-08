@@ -31,7 +31,7 @@ Due to the size of the datasets and the execution time required to perform even 
 
 #### Figures 1 & 2: Star Rating Distributions
 ```{r, echo=FALSE, fig.width=10, fig.height=4}
-load("./output/bar1_dat.Rdata")
+load("../output/bar1_dat.Rdata")
 
 colors1 <- c("brown2", "dimgray", "dimgray", "dimgray", "cadetblue3") 
 
@@ -46,7 +46,7 @@ bar1 <- ggplot(bar1_dat, aes(x=stars, y=count)) +
     ggtitle("Distribution of Star Ratings") +
     xlab("Rating") + ylab("# Reviews")
 
-load("./output/bar2_dat.Rdata")
+load("../output/bar2_dat.Rdata")
 
 colors2 <- c("brown2", "cadetblue3", "dimgray", "brown2", "cadetblue3", "dimgray") 
 
@@ -74,7 +74,7 @@ Before conducting the predictive models, I want to first explore the data to see
 
 #### Figure 3: Principal Components Map of Review Words by Star Rating
 ```{r, echo=FALSE, fig.width=5, fig.height=5}
-load("./output/pca_plot_dat.Rdata")
+load("../output/pca_plot_dat.Rdata")
 word_dat <- pca_plot_dat[[2]]
 sf <- pca_plot_dat[[3]]
 plot_dat <- pca_plot_dat[[1]]
@@ -107,7 +107,7 @@ Given the exploratory results, I am confident that I can find a predictive algor
 
 #### Table 1: 5 Star Model Results
 ```{r, results='asis', echo=FALSE}
-load("./output/results5.Rdata")
+load("../output/results5.Rdata")
 options(xtable.comment = FALSE)
 options(xtable.scalebox=.75)
 print(xtable(results5), type="latex")
@@ -117,7 +117,7 @@ The training results for the 5-star models suggest that most of the models do a 
 
 #### Table 2: 1 Star Model Results
 ```{r, results="asis", echo=FALSE}
-load("./output/results1.Rdata")
+load("../output/results1.Rdata")
 options(xtable.comment = FALSE)
 options(xtable.scalebox=.75)
 print(xtable(results1), type="latex")
@@ -129,7 +129,7 @@ Although the naive bayes models do a good job of predicting whether or not the r
 
 #### Figure 4: Predictor Importance by Model
 ```{r, echo=FALSE, fig.width=9, fig.height=4}
-load("./output/imp_dat.Rdata")
+load("../output/imp_dat.Rdata")
 
 imp_plot <- ggplot(imp_dat, aes(x=reorder(word, Overall), y=Overall, fill=model)) +
     facet_grid(. ~ model) + 
@@ -146,7 +146,7 @@ imp_plot
 
 #### Figure 5: Word Frequency of Most Important Predictors by Rating
 ```{r, echo=FALSE, fig.width=9, fig.height=5}
-load("./output/word_dat.Rdata")
+load("../output/word_dat.Rdata")
 
 word_bar <- ggplot(word_dat, aes(x=word, y=value, fill=Rating)) +
     scale_fill_manual(values=c("brown2", "dimgray", "cadetblue3")) +
@@ -169,5 +169,6 @@ I was able to identify a model that could accurately predict whether or not a Ye
 Additionally, I was able to identify that there are distinct words associated with each type of review that are not related to the other types of reviews.  High reviews tend to contain word that suggest a good experience, such as delicious (delici), best, awesome (awesome), and great.  All of these words occur much more frequently in high reviews than any other type of review.  Similarly, low reviews tend to contain words that suggest possible service problems, such as bad, minute (minut), didn't (didnt), and ask.  All of these words suggest long waits or not getting the service that was expected.
 
 For Yelp and the restaurants that use the site, these findings suggest that the review text could be a valuable source of information for service improvement and monitoring.  It's possible to use the review text to identify the highest and lowest possible review types without requiring the respondent to input any actual star rating.  Additionally, the contextual usage of the words suggests that it would be possible to use the presence of certain types of words in reviews as a warning system that there may be service-related issues at a particular restaurant, should someone choose to use this data in such a way.
+
 
 

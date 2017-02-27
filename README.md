@@ -6,7 +6,7 @@ Johns Hopkins Data Science Specialization. The courses in the
 specialization didn't offer a lot of new material in regards to
 modeling, but at the time I decided to take the specialization I was
 trying to ween myself off of SAS and onto R full time. The courses in
-the specilation were great for forcing my hand in that way!
+the specialization were great for forcing my hand in that way!
 
 I performed 12 predictive algorithms for the report (6 for 5-star
 predictions and 6 for 1-star predictions). Although I didn't need to
@@ -35,7 +35,7 @@ Report\]**](https://github.com/msheffer2/Data-Science-Specialization/blob/master
 -   [01 -
     Codeup.R](https://github.com/msheffer2/Data-Science-Specialization/blob/master/01%20-%20Codeup.R)
     -- takes two of the Yelp Review datasets and manipulates them in
-    prepration for later use
+    preparation for later use
 -   [02 - Buidling the
     DTM.R](https://github.com/msheffer2/Data-Science-Specialization/blob/master/02%20-%20Building%20the%20DTM.R)
     -- creates a corpus from the reviews, cleans it, and outputs a
@@ -61,7 +61,7 @@ Report\]**](https://github.com/msheffer2/Data-Science-Specialization/blob/master
 -   [07 - Variable
     Importance.R](https://github.com/msheffer2/Data-Science-Specialization/blob/master/07%20-%20Variable%20Importance.R)
     -- a few analyses to understand what words drive rating;
-    problematically, the naive bayes was the most accurate but NB models
+    problematically, the naive Bayes was the most accurate but NB models
     don't lend themselves well to describing what predictors are
     important, so results from the C5.0 model are used as a proxy
 
@@ -259,7 +259,7 @@ disappoint, little, and fresh are important and unique to predicting
 
 ![](README_files/figure-markdown_strict/unnamed-chunk-5-1.png)
 
-Technically, the PDF Captsone Report was all that was required but I
+Technically, the PDF Capstone Report was all that was required but I
 also submitted a github repository for those interested in seeing my
 syntax, which I've recreated here. This repository includes most of the
 datafiles required to replicate this work (excluding the original Yelp
